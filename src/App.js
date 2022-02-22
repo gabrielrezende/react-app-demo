@@ -8,6 +8,8 @@ import {
     BotaoCriarConta
 } from "./styles";
 import CreateUserForm from "./CreateUserForm";
+import CreateAcount from "./CreateAcount";
+import ForgotPassword from "./ForgotPassword";
 
 function App() {
     return (
@@ -24,7 +26,7 @@ function App() {
                 <ContainerFormulario>
                     <CreateUserForm/>
                 </ContainerFormulario>
-                <BotaoCriarConta href={"/criar-conta"}>
+                <BotaoCriarConta href="/criar-conta" onClick={CreateAcount}>
                     Criar conta
                 </BotaoCriarConta>
             </ContainerLado>

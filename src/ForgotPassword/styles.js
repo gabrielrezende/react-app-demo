@@ -16,12 +16,3 @@ export const ContainerAcao = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-
-export const BotaoEsqueciMinhaSenha = styled.a`
-  font-size: 12px;
-`;
-
-export const TextoOu = styled.p`
-  text-align: center;
-  font-size: 24px;
-`;

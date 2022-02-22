@@ -1,21 +1,21 @@
 import React from 'react';
-import {FormularioContainer, ContainerAcao, BotaoEsqueciMinhaSenha, TextoOu} from "./styles";
+import {FormularioContainer, ContainerAcao, TextoOu} from "./styles";
 import Input from "../Input";
 import Button from "../Button";
 
 export default () => {
+    
+    const onClickCriarConta = () =>{
+        console.log('criarConta');
+    }
 
     const onClickFacebook = () => {
         console.log('facebook');
-    }
+    }    
 
     const onClickGoogle = () => {
         console.log('google');
-    }
-
-    const onClickEntrar = () =>{
-        console.log('entra');
-    }
+    }  
 
     const onClickLinkedin = () =>{
         console.log('linkedin');
@@ -23,14 +23,16 @@ export default () => {
 
     return (
         <FormularioContainer>
-            <Input type={"text"} placeholder={"Digite o seu e-mail"}/>
-            <Input type={"text"} placeholder={"Digite a sua senha"}/>
+            <Input type={"text"} placeholder={"First Name"}/>
+            <Input type={"text"} placeholder={"Last Name"}/>
+            <Input type={"text"} placeholder={"Username"}/>
+            <Input type={"text"} placeholder={"Sexo"}/>
+            <Input type={"text"} placeholder={"Nascimento"}/>
+            <Input type={"text"} placeholder={"E-mail"}/>
+            <Input type={"text"} placeholder={"Senha"}/>
             <ContainerAcao>
-                <BotaoEsqueciMinhaSenha href={"/esqueci-minha-senha"}>
-                    Esqueci minha senha
-                </BotaoEsqueciMinhaSenha>
-                <Button onClick={onClickEntrar}>
-                    Entrar
+                <Button width="100%" onClick={onClickCriarConta}>
+                    Criar Conta
                 </Button>
             </ContainerAcao>
             <TextoOu>
