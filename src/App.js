@@ -7,7 +7,9 @@ import {
     TituloPlataforma,
     BotaoCriarConta
 } from "./styles";
+import {Routes, Route} from "react-router-dom";
 import CreateUserForm from "./CreateUserForm";
+import CreateAccountForm from "./CreateAccountForm";
 
 function App() {
     return (
@@ -26,6 +28,9 @@ function App() {
                 </ContainerFormulario>
                 <BotaoCriarConta href={"/criar-conta"}>
                     Criar conta
+                    <Routes>
+                        <Route path='/criar-conta' component= {CreateAccountForm()}/>
+                    </Routes>
                 </BotaoCriarConta>
             </ContainerLado>
         </Container>
