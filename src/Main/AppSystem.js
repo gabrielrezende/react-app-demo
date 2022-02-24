@@ -7,9 +7,7 @@ import {
     TituloPlataforma,
     BotaoCriarConta
 } from "./styles";
-import CreateUserForm from "../Components/CreateUserForm";
-import CreateAcount from "../Components/CreateAcount";
-import ForgotPassword from "../Components/ForgotPassword";
+import Routes from "../Routes";
 
 function App() {
     return (
@@ -24,9 +22,9 @@ function App() {
                     Allamo PRO
                 </TituloPlataforma>
                 <ContainerFormulario>
-                    <CreateUserForm/>
+                    <Routes/>
                 </ContainerFormulario>
-                <BotaoCriarConta href="/criar-conta" onClick={<CreateAcount/>}>
+                <BotaoCriarConta href="/criar-conta">
                     Criar conta
                 </BotaoCriarConta>
             </ContainerLado>

@@ -1,5 +1,10 @@
 import React from 'react';
-import {FormularioContainer, ContainerAcao, TextoOu} from "./styles";
+import {
+    FormularioContainer, 
+    ContainerAcao, 
+    TextoOu, 
+    BotaoVoltar
+    } from "./styles";
 import Input from "../Input";
 import Button from "../Button";
 
@@ -47,6 +52,9 @@ export default () => {
             <Button width="100%" backgroundColor="#0961B8" onClick={onClickLinkedin}>
                 Linkedin
             </Button>
+            <BotaoVoltar href="/">
+                Voltar
+            </BotaoVoltar>
         </FormularioContainer>
     );
 };

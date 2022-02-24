@@ -21,3 +21,7 @@ export const TextoOu = styled.p`
   text-align: center;
   font-size: 24px;
 `;
+
+export const BotaoVoltar = styled.a`
+  margin: 20px;
+`;

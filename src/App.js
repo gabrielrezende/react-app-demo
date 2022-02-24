@@ -1,7 +1,10 @@
-import AppSystem from './Main/AppSystem'
+import AppSystem from './Main/AppSystem';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export default () => {
     return (
-        <AppSystem/>
+        <Router>
+            <AppSystem/>
+        </Router>
     )
 }
