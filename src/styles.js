@@ -41,3 +41,7 @@ export const ContainerFormulario = styled.div`
 export const BotaoCriarConta = styled.a`
   margin: 20px;
 `;
+
+export const BotaoVoltar = styled.a`
+  margin: 20px;
+`;
