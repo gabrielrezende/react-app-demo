@@ -16,3 +16,7 @@ export const ContainerAcao = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const BotaoVoltar = styled.a`
+  margin: 20px;
+`;

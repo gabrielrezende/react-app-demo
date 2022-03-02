@@ -8,6 +8,7 @@ import {
 import Input from "../Input";
 import Button from "../Button";
 
+
 export default () => {
     
     const onClickCriarConta = () =>{
@@ -28,13 +29,23 @@ export default () => {
 
     return (
         <FormularioContainer>
-            <Input type={"text"} placeholder={"First Name"}/>
-            <Input type={"text"} placeholder={"Last Name"}/>
-            <Input type={"text"} placeholder={"Username"}/>
-            <Input type={"text"} placeholder={"Sexo"}/>
-            <Input type={"text"} placeholder={"Nascimento"}/>
-            <Input type={"text"} placeholder={"E-mail"}/>
+            <p>
+            <Input type={"text"} placeholder={"Nome"}/>
+            <Input type={"text"} placeholder={"Sobrenome"}/>
+            <Input type={"date"} value={"01-01-2000"}/>
+            </p>
+            <p>
+            <Input type={"radio"} NAME={"sex"} VALUE={"M"}/><label for="M">Masculino</label>
+            <Input type={"radio"} NAME={"sex"} VALUE={"F"}/><label for="F">Feminino</label>
+            </p>
+            <p>
+            <Input type={"email"} placeholder={"E-mail"}/>
+            <Input type={"text"} placeholder={"Usuário"}/>
+            </p>
+            <p>
             <Input type={"text"} placeholder={"Senha"}/>
+            <Input type={"text"} placeholder={"Confirme a Senha"}/>
+            </p>
             <ContainerAcao>
                 <Button width="100%" onClick={onClickCriarConta}>
                     Criar Conta

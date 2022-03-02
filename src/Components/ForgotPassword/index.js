@@ -1,5 +1,9 @@
 import React from 'react';
-import {FormularioContainer, ContainerAcao} from "./styles";
+import {
+        FormularioContainer, 
+        ContainerAcao, 
+        BotaoVoltar
+        } from "./styles";
 import Input from "../Input";
 import Button from "../Button";
 
@@ -17,6 +21,9 @@ export default () => {
                     Recuperar Conta
                 </Button>
             </ContainerAcao>
+            <BotaoVoltar href="/">
+                Voltar
+            </BotaoVoltar>
         </FormularioContainer>
     );
 };

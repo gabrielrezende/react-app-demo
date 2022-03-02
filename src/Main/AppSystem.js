@@ -24,9 +24,7 @@ function App() {
                 <ContainerFormulario>
                     <Routes/>
                 </ContainerFormulario>
-                <BotaoCriarConta href="/criar-conta">
-                    Criar conta
-                </BotaoCriarConta>
+                
             </ContainerLado>
         </Container>
     );

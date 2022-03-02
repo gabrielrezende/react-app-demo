@@ -1,5 +1,11 @@
 import React from 'react';
-import {FormularioContainer, ContainerAcao, BotaoEsqueciMinhaSenha, TextoOu} from "./styles";
+import {   
+        FormularioContainer, 
+        ContainerAcao, 
+        BotaoEsqueciMinhaSenha, 
+        TextoOu,
+        BotaoCriarConta
+        } from "./styles";
 import Input from "../Input";
 import Button from "../Button";
 
@@ -26,8 +32,8 @@ export default () => {
             <Input type={"text"} placeholder={"Digite o seu e-mail"}/>
             <Input type={"text"} placeholder={"Digite a sua senha"}/>
             <ContainerAcao>
-                <BotaoEsqueciMinhaSenha href={"/esqueci-minha-senha"}>
-                    Esqueci minha senha
+                <BotaoEsqueciMinhaSenha href={"/recuperar-senha"}>
+                    Recuperar senha
                 </BotaoEsqueciMinhaSenha>
                 <Button onClick={onClickEntrar}>
                     Entrar
@@ -45,6 +51,10 @@ export default () => {
             <Button width="100%" backgroundColor="#0961B8" onClick={onClickLinkedin}>
                 Linkedin
             </Button>
+            <BotaoCriarConta href="/criar-conta">
+                Criar conta
+            </BotaoCriarConta>
         </FormularioContainer>
+        
     );
 };

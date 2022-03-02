@@ -37,7 +37,3 @@ export const ContainerFormulario = styled.div`
   flex-direction: row;
   align-items: flex-end;
 `;
-
-export const BotaoCriarConta = styled.a`
-  margin: 20px;
-`;
