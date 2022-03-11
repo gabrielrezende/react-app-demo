@@ -25,3 +25,14 @@ export const TextoOu = styled.p`
 export const BotaoVoltar = styled.a`
   margin: 20px;
 `;
+
+export const LabelColumn = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 1px 150px 1px 10px;
+`;
+
+export const Input = styled.a`
+  margin: 1px 150px 1px 10px;
+`;

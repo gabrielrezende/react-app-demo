@@ -3,7 +3,8 @@ import {
     FormularioContainer, 
     ContainerAcao, 
     TextoOu, 
-    BotaoVoltar
+    BotaoVoltar,
+    LabelColumn
     } from "./styles";
 import Input from "../Input";
 import Button from "../Button";
@@ -33,18 +34,25 @@ export default () => {
             <Input type={"text"} placeholder={"Nome"}/>
             <Input type={"text"} placeholder={"Sobrenome"}/>
             <Input type={"date"} value={"01-01-2000"}/>
-            </p>
-            <p>
-            <Input type={"radio"} NAME={"sex"} VALUE={"M"}/><label for="M">Masculino</label>
-            <Input type={"radio"} NAME={"sex"} VALUE={"F"}/><label for="F">Feminino</label>
-            </p>
-            <p>
+
+            <LabelColumn>
+                <label>
+                    <input name='sexo' type='radio' />
+                    Masculino
+                </label>            
+                <label> 
+                    <input name='sexo' type='radio' />  
+                    Feminino
+                </label>
+            </LabelColumn>
+            
+            
             <Input type={"email"} placeholder={"E-mail"}/>
             <Input type={"text"} placeholder={"Usuário"}/>
             </p>
             <p>
-            <Input type={"text"} placeholder={"Senha"}/>
-            <Input type={"text"} placeholder={"Confirme a Senha"}/>
+            <Input type={"password"} placeholder={"Senha"}/>
+            <Input type={"password"} placeholder={"Confirme a Senha"}/>
             </p>
             <ContainerAcao>
                 <Button width="100%" onClick={onClickCriarConta}>

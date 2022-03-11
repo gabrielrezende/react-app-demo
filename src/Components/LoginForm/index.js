@@ -30,7 +30,7 @@ export default () => {
     return (
         <FormularioContainer>
             <Input type={"text"} placeholder={"Digite o seu e-mail"}/>
-            <Input type={"text"} placeholder={"Digite a sua senha"}/>
+            <Input type={"password"} placeholder={"Digite a sua senha"}/>
             <ContainerAcao>
                 <BotaoEsqueciMinhaSenha href={"/recuperar-senha"}>
                     Recuperar senha
